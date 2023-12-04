@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB1F1D1F2B1D4E490086340D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D1E2B1D4E490086340D /* AppDelegate.swift */; };
+		DB1F1D212B1D4E490086340D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D202B1D4E490086340D /* SceneDelegate.swift */; };
+		DB1F1D232B1D4E490086340D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D222B1D4E490086340D /* ViewController.swift */; };
+		DB1F1D282B1D4E4A0086340D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D272B1D4E4A0086340D /* Assets.xcassets */; };
+		DB1F1D2B2B1D4E4A0086340D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D292B1D4E4A0086340D /* LaunchScreen.storyboard */; };
+		DB1F1D342B1D4E8F0086340D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB1F1D332B1D4E8F0086340D /* SnapKit */; };
+		DB1F1D362B1D4F2B0086340D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D352B1D4F2B0086340D /* MainView.swift */; };
+		DB1F1D382B1D50CD0086340D /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D372B1D50CD0086340D /* DayView.swift */; };
+		DB1F1D3A2B1D50E00086340D /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D392B1D50E00086340D /* SearchController.swift */; };
+		DB1F1D3C2B1D51070086340D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D3B2B1D51070086340D /* Service.swift */; };
+		DB1F1D3E2B1D511C0086340D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D3D2B1D511C0086340D /* ViewModel.swift */; };
+		DB1F1D402B1D51370086340D /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D3F2B1D51370086340D /* WeekViewModel.swift */; };
+		DB1F1D422B1D514D0086340D /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D412B1D514D0086340D /* WeatherModel.swift */; };
+		DB1F1D442B1D515D0086340D /* WeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F1D432B1D515D0086340D /* WeekModel.swift */; };
+		DB1F1D5B2B1D534D0086340D /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D492B1D534C0086340D /* Montserrat-Thin.ttf */; };
+		DB1F1D5C2B1D534D0086340D /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D4A2B1D534C0086340D /* Montserrat-ExtraLightItalic.ttf */; };
+		DB1F1D5D2B1D534D0086340D /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D4B2B1D534C0086340D /* Montserrat-ExtraLight.ttf */; };
+		DB1F1D5E2B1D534D0086340D /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D4C2B1D534C0086340D /* Montserrat-SemiBold.ttf */; };
+		DB1F1D5F2B1D534D0086340D /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D4D2B1D534C0086340D /* Montserrat-ThinItalic.ttf */; };
+		DB1F1D602B1D534D0086340D /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D4E2B1D534C0086340D /* Montserrat-ExtraBold.ttf */; };
+		DB1F1D612B1D534D0086340D /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D4F2B1D534C0086340D /* Montserrat-Medium.ttf */; };
+		DB1F1D622B1D534D0086340D /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D502B1D534C0086340D /* Montserrat-Light.ttf */; };
+		DB1F1D632B1D534D0086340D /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D512B1D534C0086340D /* Montserrat-LightItalic.ttf */; };
+		DB1F1D642B1D534D0086340D /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D522B1D534C0086340D /* Montserrat-ExtraBoldItalic.ttf */; };
+		DB1F1D652B1D534D0086340D /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D532B1D534C0086340D /* Montserrat-Black.ttf */; };
+		DB1F1D662B1D534D0086340D /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D542B1D534C0086340D /* Montserrat-Bold.ttf */; };
+		DB1F1D672B1D534D0086340D /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D552B1D534C0086340D /* Montserrat-SemiBoldItalic.ttf */; };
+		DB1F1D682B1D534D0086340D /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D562B1D534C0086340D /* Montserrat-BlackItalic.ttf */; };
+		DB1F1D692B1D534D0086340D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D572B1D534C0086340D /* Montserrat-Regular.ttf */; };
+		DB1F1D6A2B1D534D0086340D /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D582B1D534D0086340D /* Montserrat-BoldItalic.ttf */; };
+		DB1F1D6B2B1D534D0086340D /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D592B1D534D0086340D /* Montserrat-Italic.ttf */; };
+		DB1F1D6C2B1D534D0086340D /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D5A2B1D534D0086340D /* Montserrat-MediumItalic.ttf */; };
+		DB1F1D6F2B1D535C0086340D /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D6D2B1D535C0086340D /* Montserrat-VariableFont_wght.ttf */; };
+		DB1F1D702B1D535C0086340D /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F1D6E2B1D535C0086340D /* Montserrat-Italic-VariableFont_wght.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB1F1D1B2B1D4E490086340D /* Neobis_iOS_WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1F1D1E2B1D4E490086340D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB1F1D202B1D4E490086340D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB1F1D222B1D4E490086340D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB1F1D272B1D4E4A0086340D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB1F1D2A2B1D4E4A0086340D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB1F1D2C2B1D4E4A0086340D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1F1D352B1D4F2B0086340D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DB1F1D372B1D50CD0086340D /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		DB1F1D392B1D50E00086340D /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		DB1F1D3B2B1D51070086340D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DB1F1D3D2B1D511C0086340D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DB1F1D3F2B1D51370086340D /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
+		DB1F1D412B1D514D0086340D /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		DB1F1D432B1D515D0086340D /* WeekModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekModel.swift; sourceTree = "<group>"; };
+		DB1F1D492B1D534C0086340D /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		DB1F1D4A2B1D534C0086340D /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D4B2B1D534C0086340D /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DB1F1D4C2B1D534C0086340D /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		DB1F1D4D2B1D534C0086340D /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D4E2B1D534C0086340D /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DB1F1D4F2B1D534C0086340D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		DB1F1D502B1D534C0086340D /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		DB1F1D512B1D534C0086340D /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D522B1D534C0086340D /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D532B1D534C0086340D /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		DB1F1D542B1D534C0086340D /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		DB1F1D552B1D534C0086340D /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D562B1D534C0086340D /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D572B1D534C0086340D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		DB1F1D582B1D534D0086340D /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D592B1D534D0086340D /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		DB1F1D5A2B1D534D0086340D /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DB1F1D6D2B1D535C0086340D /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		DB1F1D6E2B1D535C0086340D /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1F1D182B1D4E490086340D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1F1D342B1D4E8F0086340D /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB1F1D122B1D4E490086340D = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D1D2B1D4E490086340D /* Neobis_iOS_WeatherApp */,
+				DB1F1D1C2B1D4E490086340D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB1F1D1C2B1D4E490086340D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D1B2B1D4E490086340D /* Neobis_iOS_WeatherApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB1F1D1D2B1D4E490086340D /* Neobis_iOS_WeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D742B1D60E80086340D /* Delegate */,
+				DB1F1D732B1D60CA0086340D /* View */,
+				DB1F1D722B1D60800086340D /* Models */,
+				DB1F1D752B1D61450086340D /* Service */,
+				DB1F1D272B1D4E4A0086340D /* Assets.xcassets */,
+				DB1F1D292B1D4E4A0086340D /* LaunchScreen.storyboard */,
+				DB1F1D2C2B1D4E4A0086340D /* Info.plist */,
+				DB1F1D712B1D53850086340D /* Font */,
+			);
+			path = Neobis_iOS_WeatherApp;
+			sourceTree = "<group>";
+		};
+		DB1F1D712B1D53850086340D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D532B1D534C0086340D /* Montserrat-Black.ttf */,
+				DB1F1D562B1D534C0086340D /* Montserrat-BlackItalic.ttf */,
+				DB1F1D542B1D534C0086340D /* Montserrat-Bold.ttf */,
+				DB1F1D582B1D534D0086340D /* Montserrat-BoldItalic.ttf */,
+				DB1F1D6E2B1D535C0086340D /* Montserrat-Italic-VariableFont_wght.ttf */,
+				DB1F1D6D2B1D535C0086340D /* Montserrat-VariableFont_wght.ttf */,
+				DB1F1D4E2B1D534C0086340D /* Montserrat-ExtraBold.ttf */,
+				DB1F1D522B1D534C0086340D /* Montserrat-ExtraBoldItalic.ttf */,
+				DB1F1D4B2B1D534C0086340D /* Montserrat-ExtraLight.ttf */,
+				DB1F1D4A2B1D534C0086340D /* Montserrat-ExtraLightItalic.ttf */,
+				DB1F1D592B1D534D0086340D /* Montserrat-Italic.ttf */,
+				DB1F1D502B1D534C0086340D /* Montserrat-Light.ttf */,
+				DB1F1D512B1D534C0086340D /* Montserrat-LightItalic.ttf */,
+				DB1F1D4F2B1D534C0086340D /* Montserrat-Medium.ttf */,
+				DB1F1D5A2B1D534D0086340D /* Montserrat-MediumItalic.ttf */,
+				DB1F1D572B1D534C0086340D /* Montserrat-Regular.ttf */,
+				DB1F1D4C2B1D534C0086340D /* Montserrat-SemiBold.ttf */,
+				DB1F1D552B1D534C0086340D /* Montserrat-SemiBoldItalic.ttf */,
+				DB1F1D492B1D534C0086340D /* Montserrat-Thin.ttf */,
+				DB1F1D4D2B1D534C0086340D /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		DB1F1D722B1D60800086340D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D3D2B1D511C0086340D /* ViewModel.swift */,
+				DB1F1D3F2B1D51370086340D /* WeekViewModel.swift */,
+				DB1F1D412B1D514D0086340D /* WeatherModel.swift */,
+				DB1F1D432B1D515D0086340D /* WeekModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB1F1D732B1D60CA0086340D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D222B1D4E490086340D /* ViewController.swift */,
+				DB1F1D352B1D4F2B0086340D /* MainView.swift */,
+				DB1F1D372B1D50CD0086340D /* DayView.swift */,
+				DB1F1D392B1D50E00086340D /* SearchController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB1F1D742B1D60E80086340D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D1E2B1D4E490086340D /* AppDelegate.swift */,
+				DB1F1D202B1D4E490086340D /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DB1F1D752B1D61450086340D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DB1F1D3B2B1D51070086340D /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB1F1D1A2B1D4E490086340D /* Neobis_iOS_WeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1F1D2F2B1D4E4A0086340D /* Build configuration list for PBXNativeTarget "Neobis_iOS_WeatherApp" */;
+			buildPhases = (
+				DB1F1D172B1D4E490086340D /* Sources */,
+				DB1F1D182B1D4E490086340D /* Frameworks */,
+				DB1F1D192B1D4E490086340D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neobis_iOS_WeatherApp;
+			packageProductDependencies = (
+				DB1F1D332B1D4E8F0086340D /* SnapKit */,
+			);
+			productName = Neobis_iOS_WeatherApp;
+			productReference = DB1F1D1B2B1D4E490086340D /* Neobis_iOS_WeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1F1D132B1D4E490086340D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DB1F1D1A2B1D4E490086340D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DB1F1D162B1D4E490086340D /* Build configuration list for PBXProject "Neobis_iOS_WeatherApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1F1D122B1D4E490086340D;
+			packageReferences = (
+				DB1F1D322B1D4E8F0086340D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = DB1F1D1C2B1D4E490086340D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB1F1D1A2B1D4E490086340D /* Neobis_iOS_WeatherApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB1F1D192B1D4E490086340D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1F1D6A2B1D534D0086340D /* Montserrat-BoldItalic.ttf in Resources */,
+				DB1F1D632B1D534D0086340D /* Montserrat-LightItalic.ttf in Resources */,
+				DB1F1D702B1D535C0086340D /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				DB1F1D622B1D534D0086340D /* Montserrat-Light.ttf in Resources */,
+				DB1F1D692B1D534D0086340D /* Montserrat-Regular.ttf in Resources */,
+				DB1F1D5E2B1D534D0086340D /* Montserrat-SemiBold.ttf in Resources */,
+				DB1F1D672B1D534D0086340D /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				DB1F1D6B2B1D534D0086340D /* Montserrat-Italic.ttf in Resources */,
+				DB1F1D5F2B1D534D0086340D /* Montserrat-ThinItalic.ttf in Resources */,
+				DB1F1D682B1D534D0086340D /* Montserrat-BlackItalic.ttf in Resources */,
+				DB1F1D652B1D534D0086340D /* Montserrat-Black.ttf in Resources */,
+				DB1F1D6C2B1D534D0086340D /* Montserrat-MediumItalic.ttf in Resources */,
+				DB1F1D2B2B1D4E4A0086340D /* LaunchScreen.storyboard in Resources */,
+				DB1F1D662B1D534D0086340D /* Montserrat-Bold.ttf in Resources */,
+				DB1F1D5C2B1D534D0086340D /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				DB1F1D5B2B1D534D0086340D /* Montserrat-Thin.ttf in Resources */,
+				DB1F1D602B1D534D0086340D /* Montserrat-ExtraBold.ttf in Resources */,
+				DB1F1D6F2B1D535C0086340D /* Montserrat-VariableFont_wght.ttf in Resources */,
+				DB1F1D282B1D4E4A0086340D /* Assets.xcassets in Resources */,
+				DB1F1D642B1D534D0086340D /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				DB1F1D612B1D534D0086340D /* Montserrat-Medium.ttf in Resources */,
+				DB1F1D5D2B1D534D0086340D /* Montserrat-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1F1D172B1D4E490086340D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1F1D232B1D4E490086340D /* ViewController.swift in Sources */,
+				DB1F1D3C2B1D51070086340D /* Service.swift in Sources */,
+				DB1F1D3A2B1D50E00086340D /* SearchController.swift in Sources */,
+				DB1F1D402B1D51370086340D /* WeekViewModel.swift in Sources */,
+				DB1F1D442B1D515D0086340D /* WeekModel.swift in Sources */,
+				DB1F1D422B1D514D0086340D /* WeatherModel.swift in Sources */,
+				DB1F1D382B1D50CD0086340D /* DayView.swift in Sources */,
+				DB1F1D362B1D4F2B0086340D /* MainView.swift in Sources */,
+				DB1F1D1F2B1D4E490086340D /* AppDelegate.swift in Sources */,
+				DB1F1D3E2B1D511C0086340D /* ViewModel.swift in Sources */,
+				DB1F1D212B1D4E490086340D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB1F1D292B1D4E4A0086340D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1F1D2A2B1D4E4A0086340D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB1F1D2D2B1D4E4A0086340D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB1F1D2E2B1D4E4A0086340D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB1F1D302B1D4E4A0086340D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_WeatherApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alt.Neobis-iOS-WeatherApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB1F1D312B1D4E4A0086340D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_WeatherApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alt.Neobis-iOS-WeatherApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1F1D162B1D4E490086340D /* Build configuration list for PBXProject "Neobis_iOS_WeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1F1D2D2B1D4E4A0086340D /* Debug */,
+				DB1F1D2E2B1D4E4A0086340D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1F1D2F2B1D4E4A0086340D /* Build configuration list for PBXNativeTarget "Neobis_iOS_WeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1F1D302B1D4E4A0086340D /* Debug */,
+				DB1F1D312B1D4E4A0086340D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB1F1D322B1D4E8F0086340D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB1F1D332B1D4E8F0086340D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB1F1D322B1D4E8F0086340D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB1F1D132B1D4E490086340D /* Project object */;
+}
